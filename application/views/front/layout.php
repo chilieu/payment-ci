@@ -1,0 +1,2 @@
+testeinf
+<?=@$_body?>
