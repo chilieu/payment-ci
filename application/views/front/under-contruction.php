@@ -1,3 +1,4 @@
+<?php $themes = "/public/themes/under-contruction/";?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,15 +10,15 @@
     <meta name="author" content="CloudBerry Software">
     <title>CloudBerry Hosting is Coming Soon!</title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url($themes . 'css/bootstrap.min.css'); ?>" rel="stylesheet" />
     <!-- Google Web Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'
         type='text/css'>
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="<?php echo base_url($themes . 'font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet" />
+    <link href="<?php echo base_url($themes . 'css/style.css'); ?>" rel="stylesheet" />
     <!--[if lt IE 9]>
-		<script src="js/ie8-responsive-file-warning.js"></script>
+		<script src="<?php echo base_url($themes . 'js/ie8-responsive-file-warning.js'); ?>"></script>
 	<![endif]-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,11 +27,11 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/fav-144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/fav-114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/fav-72.png">
-    <link rel="apple-touch-icon-precomposed" href="images/fav-57.png">
-    <link rel="shortcut icon" href="images/fav.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url($themes . 'images/fav-144.png'); ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url($themes . 'images/fav-114.png'); ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url($themes . 'images/fav-72.png'); ?>">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo base_url($themes . 'images/fav-57.png'); ?>">
+    <link rel="shortcut icon" href="<?php echo base_url($themes . 'images/fav.png'); ?>">
 </head>
 <body >
     <!-- Preloader Starts -->
@@ -198,12 +199,12 @@
     </footer>
     <!-- Footer Ends -->
     <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/jquery.backstretch.min.js" type="text/javascript"></script>
-    <script src="js/scrollReveal.js" type="text/javascript"></script>
-    <script src="js/jquery.downCount.js" type="text/javascript"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="<?php echo base_url($themes . 'js/jquery-1.11.1.min.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url($themes . 'js/bootstrap.min.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url($themes . 'js/jquery.backstretch.min.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url($themes . 'js/scrollReveal.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url($themes . 'js/jquery.downCount.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url($themes . 'js/custom.js'); ?>" type="text/javascript"></script>
 
 
 </body>

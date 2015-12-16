@@ -8,8 +8,8 @@ $(function() {
 	});
 
 	// Backstretchs
-	$("#header").backstretch("images/bg.jpg");
-	$("#services").backstretch("images/3.jpg");
+	$("#header").backstretch("/public/themes/under-contruction/images/bg.jpg");
+	$("#services").backstretch("/public/themes/under-contruction/images/3.jpg");
 
 	// Countdown
 	$('.countdown').downCount({
