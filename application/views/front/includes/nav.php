@@ -31,7 +31,11 @@
                   <li class="single-dropdown"> <a href="<?=site_url("deal");?>">Deals</a></li>
 
                   <!--=========== Contact Menu ===============-->
-                  <li class="single-dropdown"><a href="#">Contact Us</a>
+                  <li class="single-dropdown"><a href="<?=site_url("support");?>">Support</a>
+
+                  <!--=========== Contact Menu ===============-->
+                  <li class="single-dropdown"><a href="<?=site_url("contact-us");?>">Contact Us</a>
+
 
                 </ul>
               </div>

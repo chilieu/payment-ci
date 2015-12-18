@@ -1,4 +1,4 @@
-
+<?php /*
     <div class="footer-wrapper">
       <div class="container">
         <div class="row add-clearfix same-height">
@@ -45,3 +45,4 @@
         </div>
       </div>
     </div>
+*/?>

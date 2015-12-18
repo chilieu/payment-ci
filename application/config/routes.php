@@ -58,6 +58,14 @@ $route['translate_uri_dashes'] = FALSE;
 // front
 // $route['/'] = 'Home';
 
-// manage
+// deal
 $route['deal'] = 'deal/index';
 $route['deal/(:any)'] = 'deal/$1';
+
+// contact-us
+$route['contact-us'] = 'contact-us/index';
+$route['contact-us/(:any)'] = 'contact-us/$1';
+
+// support
+$route['support'] = 'support/index';
+$route['support/(:any)'] = 'support/$1';

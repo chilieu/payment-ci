@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Cloudberry Hosting</title>
+<title>Cloudberry Shared Hosting</title>
 <meta charset="utf-8">
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
-<meta name="description" content="Your description">
-<meta name="keywords" content="Your keywords">
-<meta name="author" content="Your name">
+<link rel="icon" href="<?php echo base_url($themes . 'img/favicon.ico'); ?>" type="image/x-icon">
+<link rel="shortcut icon" href="<?php echo base_url($themes . 'img/favicon.ico'); ?>" type="image/x-icon"/>
+<meta name="description" content="CloudBerry Soft is a small group of dedicated Knights working hard around the table and the clock to make awesome app and premium software">
+<meta name="keyword" content="CloudBerry Soft, build website, awesome custom app, premium software, Wordpress">
+<meta name="author" content="CloudBerry Software">
 <meta name="format-detection" content="telephone=no"/>
 <!-- Theme CSS -->
 <link rel="stylesheet" href="<?php echo base_url($themes . 'css/bootstrap.css'); ?>">

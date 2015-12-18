@@ -32,7 +32,7 @@
 /*=========================================================================
 
  01. Main elements
- 
+
 =========================================================================*/
 
 
@@ -98,7 +98,7 @@ h6 { font-size: 14px; line-height: 31px; }
 /*=========================================================================
 
  02. Titles and Text
- 
+
 =========================================================================*/
 
 
@@ -173,7 +173,7 @@ h2.section-title { font-size: 23px; line-height: 31px; }
 /*=========================================================================
 
  03. HOME SLIDER WT TEXT
- 
+
 =========================================================================*/
 
 
@@ -181,7 +181,7 @@ h2.section-title { font-size: 23px; line-height: 31px; }
 #parallax-backstretch { z-index:-1; position:fixed; width:100%; height: 800px; overflow:hidden; }
 
 .boxed #parallax-backstretch { position: absolute !important; }
-    
+
 .boxed #parallax-backstretch .backstretch img { height: auto !important; left: 0 !important; overflow: hidden;  position: absolute !important; top: 0 !important; width: 100% !important; }
 
 #coming-soon { background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7); width:100%; padding: 150px 0 120px; }
@@ -262,7 +262,7 @@ margin-bottom:10px;
 /*=========================================================================
 
  04. HEADER
- 
+
 =========================================================================*/
 
 
@@ -283,14 +283,14 @@ margin-bottom:10px;
 /* INNER PAGE MAIN HEADER wt TITLE       */
 /* ===================================== */
 
-.page-title-container { background: url("../img/inner-header.jpg") repeat fixed 0 0 #09131d; position:relative; overflow: hidden; z-index: 1; }
+.page-title-container { background: url("/themes/front/img/inner-header.jpg") repeat fixed 0 0 #09131d; position:relative; overflow: hidden; z-index: 1; }
 
 .page-title-container .entry-title { color: #ffffff; font-size: 41px; font-weight: 800; margin-bottom: 0; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); text-transform: uppercase; }
  .page-title-container .entry-title::before, .page-title-container .entry-title::after {
  border-bottom: 4px double rgba(255, 255, 255, 0.17);
 }
 .page-title-container.cnt {
-  background: rgba(0, 0, 0, 0) url("../img/inner-header-contact.jpg") repeat scroll 50% 50% / cover !important;
+  background: rgba(0, 0, 0, 0) url("/themes/front/img/inner-header-contact.jpg") repeat scroll 50% 50% / cover !important;
 }
 .page-title-map {
   background: rgb(15, 36, 49) none repeat scroll 0 0;
@@ -338,11 +338,11 @@ margin-bottom:10px;
 /*=========================================================================
 
  05. Rocket Animated
- 
+
 =========================================================================*/
 
 .rocket-fly { display: inline-block; width: 144px; height: 281px; margin-left: -72px; position: absolute; left: 50%; top: 0; -moz-animation: float 1000ms infinite ease-in-out; -webkit-animation: float 1000ms infinite ease-in-out; animation: float 1000ms infinite ease-in-out }
-@-webkit-keyframes 
+@-webkit-keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
 -moz-transform: translateY(5px) translateX(1px);
@@ -359,7 +359,7 @@ float { 0% {
  transform: translateY(5px) translateX(1px)
 }
 }
-@-moz-keyframes 
+@-moz-keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
  -moz-transform: translateY(5px) translateX(1px);
@@ -376,7 +376,7 @@ float { 0% {
  transform: translateY(5px) translateX(1px)
 }
 }
-@keyframes 
+@keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
  -moz-transform: translateY(5px) translateX(1px);
@@ -394,10 +394,10 @@ float { 0% {
 }
 }
 
-.rocket-fly .rocket { width: 100%; height: 100%; position: absolute; background: url(../img/illustration/rocket.png) no-repeat; left: 0; top: 0; z-index: 1 }
+.rocket-fly .rocket { width: 100%; height: 100%; position: absolute; background: url(/themes/front/img/illustration/rocket.png) no-repeat; left: 0; top: 0; z-index: 1 }
 
-.fuego { width: 40px; height: 71px; position: absolute; background: url(../img/illustration/fego.png) no-repeat; left: 55px; bottom: -7px; -webkit-animation: fire 100ms infinite ease-in-out; -moz-animation: fire 100ms infinite ease-in-out; animation: fire 100ms infinite ease-in-out }
-@-webkit-keyframes 
+.fuego { width: 40px; height: 71px; position: absolute; background: url(/themes/front/img/illustration/fego.png) no-repeat; left: 55px; bottom: -7px; -webkit-animation: fire 100ms infinite ease-in-out; -moz-animation: fire 100ms infinite ease-in-out; animation: fire 100ms infinite ease-in-out }
+@-webkit-keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -414,7 +414,7 @@ fire { 0% {
  transform: rotate(10deg)
 }
 }
-@-moz-keyframes 
+@-moz-keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -431,7 +431,7 @@ fire { 0% {
  transform: rotate(10deg)
 }
 }
-@keyframes 
+@keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -457,7 +457,7 @@ fire { 0% {
 
 
 .super-man { display: inline-block; height: 139px; position: relative; width: 314px; -moz-animation: float 1000ms infinite ease-in-out; -webkit-animation: float 1000ms infinite ease-in-out; animation: float 1000ms infinite ease-in-out; }
-@-webkit-keyframes 
+@-webkit-keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
  -moz-transform: translateY(5px) translateX(1px);
@@ -474,7 +474,7 @@ float { 0% {
  transform: translateY(5px) translateX(1px)
 }
 }
-@-moz-keyframes 
+@-moz-keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
  -moz-transform: translateY(5px) translateX(1px);
@@ -491,7 +491,7 @@ float { 0% {
  transform: translateY(5px) translateX(1px)
 }
 }
-@keyframes 
+@keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
  -moz-transform: translateY(5px) translateX(1px);
@@ -509,10 +509,10 @@ float { 0% {
 }
 }
 
-.super-man .sp-man { background: rgba(0, 0, 0, 0) url("../img/illustration/sp-man.png") no-repeat scroll 0 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 1; }
+.super-man .sp-man { background: rgba(0, 0, 0, 0) url("/themes/front/img/illustration/sp-man.png") no-repeat scroll 0 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 1; }
 
-.fly-waves { background: rgba(0, 0, 0, 0) url("../img/illustration/waving.png") no-repeat scroll 0 0; height: 69px; left: 95px; position: absolute; top: 12px; width: 188px; -webkit-animation: fire 100ms infinite ease-in-out; -moz-animation: fire 100ms infinite ease-in-out; animation: fire 100ms infinite ease-in-out }
-@-webkit-keyframes 
+.fly-waves { background: rgba(0, 0, 0, 0) url("/themes/front/img/illustration/waving.png") no-repeat scroll 0 0; height: 69px; left: 95px; position: absolute; top: 12px; width: 188px; -webkit-animation: fire 100ms infinite ease-in-out; -moz-animation: fire 100ms infinite ease-in-out; animation: fire 100ms infinite ease-in-out }
+@-webkit-keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -529,7 +529,7 @@ fire { 0% {
  transform: rotate(10deg)
 }
 }
-@-moz-keyframes 
+@-moz-keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -546,7 +546,7 @@ fire { 0% {
  transform: rotate(10deg)
 }
 }
-@keyframes 
+@keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -621,7 +621,7 @@ fire { 0% {
 /*=========================================================================
 
  07. ROW WRAPPERS
- 
+
 =========================================================================*/
 
 
@@ -636,7 +636,7 @@ top: 0;
 width: 100%;
 }
 
-.second .bg { background: url("../img/parallax/trainers.png") 50% 0 no-repeat fixed; height: auto; margin: 0 auto; padding: 0; position: absolute; width: 900px; z-index: 200; }
+.second .bg { background: url("/themes/front/img/parallax/trainers.png") 50% 0 no-repeat fixed; height: auto; margin: 0 auto; padding: 0; position: absolute; width: 900px; z-index: 200; }
 
 .third { background: none repeat scroll 0 0 #f7f7f7; padding: 80px 0 60px; position: relative; overflow: hidden; }
  .third::before {
@@ -649,7 +649,7 @@ top: 0;
 width: 100%;
 }
 
-.third .title { background: url("../img/patterns/pattern-stripes.png") repeat scroll 0 50% rgba(0, 0, 0, 0); overflow: hidden; }
+.third .title { background: url("/themes/front/img/patterns/pattern-stripes.png") repeat scroll 0 50% rgba(0, 0, 0, 0); overflow: hidden; }
 
 .third .title span { background: none repeat scroll 0 0 #f7f7f7; float: left; padding: 0 31px 0 0 !important; }
 
@@ -688,27 +688,27 @@ width: 100%;
 
 .parallax .container { -webkit-backface-visibility:hidden }
 
-.parallax-image1 { background-image:url(../img/parallax1.jpg); background-color: #101010; }
+.parallax-image1 { background-image:url(/themes/front/img/parallax1.jpg); background-color: #101010; }
 
-.parallax-image2 { background-image:url(../img/parallax1.jpg); }
+.parallax-image2 { background-image:url(/themes/front/img/parallax1.jpg); }
 
-.parallax-image4 { background-image:url(../img/bg2.jpg); background-color: #101010; border-bottom: 1px solid #eaebeb; border-top: 1px solid #eaebeb; padding: 80px 0 60px; position: relative; }
+.parallax-image4 { background-image:url(/themes/front/img/bg2.jpg); background-color: #101010; border-bottom: 1px solid #eaebeb; border-top: 1px solid #eaebeb; padding: 80px 0 60px; position: relative; }
 
 .parallax-image4 h2, .parallax-image4 p {
   color: #fff;
 }
 
 
-.parallax-image6 { background-image:url(../img/illustration/cloud.png) }
+.parallax-image6 { background-image:url(/themes/front/img/illustration/cloud.png) }
 
-.map-overlay { 
+.map-overlay {
 background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* FF3.6+ */
 background: -webkit-gradient(linear, 270deg, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(244, 246, 12, 0)));/* Chrome,Safari4+ */
 background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* Opera 11.10+ */
 background: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* IE10+ */
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0.7)', endColorstr='rgba(244, 246, 12, 0)', GradientType='1'); /* for IE */
-background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* W3C */ 
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* W3C */
 display: inline-block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 3; }
 
 .img-overlay {
@@ -724,11 +724,11 @@ display: inline-block; height: 100%; left: 0; position: absolute; top: 0; width:
 
 .overlay-light { background: none repeat scroll 0 0 rgba(40, 47, 57, 0.8); display: inline-block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 
-.banner-image1 { background: url("../img/about-bg.jpg") no-repeat center top transparent; }
+.banner-image1 { background: url("/themes/front/img/about-bg.jpg") no-repeat center top transparent; }
 
 .light-overlay1 { background-color: rgba(237, 246, 255, 0.3); border-bottom: 1px solid #e0e9f2; border-top: 1px solid #e0e9f2; padding: 80px 0 60px; }
 
-.bg-client-section { background: #222222 url("../img/client-bg.jpg") repeat fixed 0 0; height: auto; margin: 0 auto; overflow: hidden; padding: 80px 0; position: relative; }
+.bg-client-section { background: #222222 url("/themes/front/img/client-bg.jpg") repeat fixed 0 0; height: auto; margin: 0 auto; overflow: hidden; padding: 80px 0; position: relative; }
 
 .bg-client-section h1, .bg-client-section h2, .bg-client-section h3, .bg-client-section h4, .bg-client-section h5, .bg-client-section h6, .bg-client-section p { color: #fff; }
 
@@ -748,7 +748,7 @@ background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 32%);/* W3C */ border: 1
 
 .deal-boxed .box-content { display: inline-block; }
 
-.deal-boxed .icon-tag { background: url("../img/icons/tag.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); color: #f76742; font-family: "Signika", sans-serif; font-size: 22px; font-weight: 700; height: 130px; padding: 32px 0 0; position: absolute; right: 0; text-align: center; top: 0; width: 97px; }
+.deal-boxed .icon-tag { background: url("/themes/front/img/icons/tag.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); color: #f76742; font-family: "Signika", sans-serif; font-size: 22px; font-weight: 700; height: 130px; padding: 32px 0 0; position: absolute; right: 0; text-align: center; top: 0; width: 97px; }
 
 .deal-boxed .icon-tag span { color: #ffffff; display: block; font-family: "Roboto", sans-serif; font-size: 12px; font-weight: 700; line-height: 18px; margin-top: 29px; text-transform: uppercase; }
 
@@ -804,7 +804,7 @@ background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 32%);/* W3C */ border: 1
 /*=========================================================================
 
  10. Image Container
- 
+
 =========================================================================*/
 
 
@@ -1013,7 +1013,7 @@ color:#c7c7c7;
 opacity:1
 }
 
-.form-domain .domain-extension { background: #f4f8fb url("../img/icons/select-caret.png") no-repeat scroll right center; -webkit-border-radius: 33px; -moz-border-radius: 33px; border-radius: 33px; bottom: 8px; height: auto; overflow: hidden; position: absolute; right: 14px; top: 8px; z-index: 1; }
+.form-domain .domain-extension { background: #f4f8fb url("/themes/front/img/icons/select-caret.png") no-repeat scroll right center; -webkit-border-radius: 33px; -moz-border-radius: 33px; border-radius: 33px; bottom: 8px; height: auto; overflow: hidden; position: absolute; right: 14px; top: 8px; z-index: 1; }
 
 .form-domain .domain-extension select { color:#333; background: rgba(0, 0, 0, 0) none repeat scroll 0 0; font-size: 18px; font-weight:600; width:120px; padding-left:15px; padding-right:15px; z-index:2; height:49px; border:none; position:relative; -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0); -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0); box-shadow: 0 0 0 rgba(0, 0, 0, 0); appearance:none; -moz-appearance:none; -ms-appearance:none; -webkit-appearance:none }
 
@@ -1150,7 +1150,7 @@ background: linear-gradient(180deg, #f5ffff 0%, #e6efef 30%);/* W3C */ border-bo
 /*=========================================================================
 
  17. Team
- 
+
 ========================================================================= */
 
 
@@ -1161,7 +1161,7 @@ background: linear-gradient(180deg, #f5ffff 0%, #e6efef 30%);/* W3C */ border-bo
 transform: scale(1, 1); transition-timing-function: ease-out; transition-duration: .6s;
 z-index: 7; pointer-events: none; background-repeat: no-repeat; outline: 0 }
 
-.shape .overlay.hexagon { background: url(../img/team/shape.png) }
+.shape .overlay.hexagon { background: url(/themes/front/img/team/shape.png) }
 
 .shape:hover .overlay { -webkit-transform: scale(1.07, 1.07); -webkit-transition-timing-function: ease-out; -webkit-transition-duration: .3s;
 -moz-transform: scale(1.07, 1.07); -moz-transition-timing-function: ease-out; -moz-transition-duration: .3s
@@ -1254,7 +1254,7 @@ opacity:.4 }
 /*=========================================================================
 
  19. FAQ's
- 
+
 =========================================================================*/
 
 
@@ -1307,7 +1307,7 @@ background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);/* W3C */ font-siz
 /*=========================================================================
 
  20. Sitemap
- 
+
 ========================================================================= */
 
 
@@ -1321,9 +1321,9 @@ background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);/* W3C */ font-siz
 
 #site-map { margin: 0; float: left; width: 100%; }
 
-#site-map #home { display: block; float: none; background: #ffffff url('../img/icons/ST1-left.png') center bottom no-repeat; position: relative; z-index: 2; }
+#site-map #home { display: block; float: none; background: #ffffff url('/themes/front/img/icons/ST1-left.png') center bottom no-repeat; position: relative; z-index: 2; }
 
-#site-map li { float: left; background: url('../img/icons/ST1-center.png') center top no-repeat; padding: 30px 0; margin-top: -30px; }
+#site-map li { float: left; background: url('/themes/front/img/icons/ST1-center.png') center top no-repeat; padding: 30px 0; margin-top: -30px; }
 
 #site-map li a.main { background: none repeat scroll 0 0 #A56AB6; border: 1px solid #854A96; }
 
@@ -1333,11 +1333,11 @@ background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);/* W3C */ font-siz
 
 #site-map li a:hover { background-color: #6ACAF3; border-color: #3A9AC3; -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0s); -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0); box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
 
-#site-map li:last-child { background: url('../img/icons/ST1-right.png') center top no-repeat; }
+#site-map li:last-child { background: url('/themes/front/img/icons/ST1-right.png') center top no-repeat; }
 
 /* --------	Second Level --------- */
 
-#site-map li li { width: 100%; clear: left; margin-top: 0; padding: 10px 0 0 0; background: url('../img/icons/ST-vertical-line.png') center bottom repeat-y; }
+#site-map li li { width: 100%; clear: left; margin-top: 0; padding: 10px 0 0 0; background: url('/themes/front/img/icons/ST-vertical-line.png') center bottom repeat-y; }
 
 #site-map li li a { background-color: #4AD3A7; border-color: #36BF93; }
 
@@ -1345,27 +1345,27 @@ background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);/* W3C */ font-siz
 
 #site-map li li:first-child { padding-top: 30px; }
 
-#site-map li li:last-child { background: url('../img/icons/ST-vertical-line.png') center bottom repeat-y; }
+#site-map li li:last-child { background: url('/themes/front/img/icons/ST-vertical-line.png') center bottom repeat-y; }
 
 /* --------	Third Level --------- */
 
-#site-map li li ul { margin: 10px 0 0 0; width: 100%; float: right; padding: 9px 0 0 0; background: #ffffff url('../img/icons/ST3-ul-top.png') center top no-repeat; }
+#site-map li li ul { margin: 10px 0 0 0; width: 100%; float: right; padding: 9px 0 0 0; background: #ffffff url('/themes/front/img/icons/ST3-ul-top.png') center top no-repeat; }
 
-#site-map li li li { background: url('../img/icons/ST3-center.png') left center no-repeat; padding: 5px 0; }
+#site-map li li li { background: url('/themes/front/img/icons/ST3-center.png') left center no-repeat; padding: 5px 0; }
 
 #site-map li li li a { background-color: #E9CE3B; border-color: #CCB11E; width: 80%; float: right; }
 
 #site-map li li li a:hover { background-color: #FADF4C; border-color: #CDB21F; }
 
-#site-map li li li:first-child { padding: 15px 0 5px 0; background: url('../img/icons/ST3-li-top.png') left center no-repeat; }
+#site-map li li li:first-child { padding: 15px 0 5px 0; background: url('/themes/front/img/icons/ST3-li-top.png') left center no-repeat; }
 
-#site-map li li li:last-child { background: url('../img/icons/ST3-bottom.png') left center no-repeat; }
+#site-map li li li:last-child { background: url('/themes/front/img/icons/ST3-bottom.png') left center no-repeat; }
 
 
 /*=========================================================================
 
  21. Blog
- 
+
 ========================================================================= */
 
 .post-holder { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #E1E1E1; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); margin-bottom: 60px; position: relative; }
@@ -1392,7 +1392,7 @@ background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);/* W3C */ font-siz
 
 .parent { background: none repeat scroll 0 0 #FFFFFF; box-shadow: 0 0 1px #CCCCCC; margin-bottom: 30px; padding: 20px; position:relative; }
 
-.parent-sub-img { background: url("../img/icons/post-sub.png") no-repeat scroll 0 0 transparent; display: inline-block; height: 70px; left: -22px; position: absolute; top: -30px; width: 19px; }
+.parent-sub-img { background: url("/themes/front/img/icons/post-sub.png") no-repeat scroll 0 0 transparent; display: inline-block; height: 70px; left: -22px; position: absolute; top: -30px; width: 19px; }
 
 .parent img { float: left; }
 
@@ -1508,7 +1508,7 @@ width: 8px;
 /*=========================================================================
 
  22. SIDEBAR
- 
+
 =========================================================================*/
 
 
@@ -1647,7 +1647,7 @@ ul.list-link>li a:hover { color: #D53701; text-decoration: none; }
 /*=========================================================================
 
  23. Popup Contact Form
- 
+
 ========================================================================= */
 
 .cd-nav-trigger { position: fixed; bottom: 50px; right: 50px; width: 44px; height: 44px; background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8); overflow: hidden; text-indent: 100%; white-space: nowrap; z-index: 2; visibility: hidden; -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0); -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s; -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s; transition: transform 0.3s, visibility 0s 0.3s; }
@@ -1694,7 +1694,7 @@ ul.list-link>li a:hover { color: #D53701; text-decoration: none; }
 }
 /* Generated with Bounce.js. Edit at http://goo.gl/PJ93gs */
 
-@-webkit-keyframes 
+@-webkit-keyframes
 anim-jelly { 0% {
  -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
  transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -1820,7 +1820,7 @@ anim-jelly { 0% {
  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 }
-@keyframes 
+@keyframes
 anim-jelly { 0% {
  -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
  transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -1950,7 +1950,7 @@ anim-jelly { 0% {
 /*=========================================================================
 
  24. MAP
- 
+
 ========================================================================= */
 
 .page-title-map #map { position: absolute !important; height: 100%; z-index: 1; }
@@ -2056,7 +2056,7 @@ transition:transform ease-in-out .25s
 /*=========================================================================
 
  25. Contact form
- 
+
 =========================================================================*/
 
 
@@ -2075,7 +2075,7 @@ transition:transform ease-in-out .25s
 .box-style .title { margin-top: 10px; }
 
 .box-style .title,
-.comment-box .title { background: url("../img/patterns/pattern-stripes.png") repeat scroll 0 50% rgba(0, 0, 0, 0); color: #343844 ; font-size: 18px; overflow: hidden; text-shadow: 0 0 0; line-height: 26px; }
+.comment-box .title { background: url("/themes/front/img/patterns/pattern-stripes.png") repeat scroll 0 50% rgba(0, 0, 0, 0); color: #343844 ; font-size: 18px; overflow: hidden; text-shadow: 0 0 0; line-height: 26px; }
 
 .box-style .title span,
 .comment-box .title span { background: none repeat scroll 0 0 #fff; float: left; padding: 0 31px 0 0 !important; }
@@ -2216,7 +2216,7 @@ width:100%;
 
 #newsletter_signup { margin-bottom: 31px; margin-top: 31px; position: relative; text-align: right; }
 
-#newsletter_signup input[type="email"].form-control { background: url("../img/icons/mail.png") no-repeat scroll 10px 6px #ffffff; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-size: 15px; height: 50px; padding: 5px 15px 5px 65px; width: 100%; }
+#newsletter_signup input[type="email"].form-control { background: url("/themes/front/img/icons/mail.png") no-repeat scroll 10px 6px #ffffff; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-size: 15px; height: 50px; padding: 5px 15px 5px 65px; width: 100%; }
 
 #newsletter_signup input[type="submit"] { background: none repeat scroll 0 0 #000; border: 0 none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; color: #ffffff; cursor: pointer; float: right; font-size: 14px; font-weight: 600; height: 44px; margin: 3px; padding: 6px 20px; position: absolute; right: 0; text-transform: uppercase; top: 0; -webkit-transition: all 0.3s ease;/* Safari 3.2+, Chrome */ -moz-transition: all 0.3s ease;/* Firefox 4-15 */ -o-transition: all 0.3s ease;/* Opera 10.5-12.00 */ transition: all 0.3s ease;/* Firefox 16+, Opera 12.50+ */ }
 

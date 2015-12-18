@@ -23,13 +23,6 @@
 
 <?=@$_body?>
 
-
-<!-- Carousel Clients -->
-<?php //$this->load->view('front/partials/our-awesome-clients', array('themes' => $themes))?>
-
-<!-- customer-testitmonials -->
-<?php //$this->load->view('front/partials/customer-testitmonials', array('themes' => $themes))?>
-
 <!-- contact-popup -->
 <?php $this->load->view('front/includes/contact-popup', array('themes' => $themes))?>
 

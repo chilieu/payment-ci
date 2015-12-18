@@ -9,7 +9,7 @@
 <!--======= Logo, Main Navigation, Search and Side navigation button=======-->
 <?php $this->load->view('front/includes/nav', array('themes' => $themes))?>
 
-  <div class="page-title-container">
+  <div class="page-title-container cnt">
     <div class="page-title">
       <div class="container">
         <h1 class="title-center entry-title">CloudBerry</h1>
@@ -22,12 +22,6 @@
   </div>
 
 <?=@$_body?>
-
-<!-- Carousel Clients -->
-<?php //$this->load->view('front/partials/our-awesome-clients', array('themes' => $themes))?>
-
-<!-- customer-testitmonials -->
-<?php //$this->load->view('front/partials/customer-testitmonials', array('themes' => $themes))?>
 
 <!-- contact-popup -->
 <?php $this->load->view('front/includes/contact-popup', array('themes' => $themes))?>
