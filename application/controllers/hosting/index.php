@@ -9,7 +9,7 @@ class Index extends Front_Controller
 	}
 	public function index()
 	{
-		$this->viewData['_body'] = $this->load->view( $this->APP . '/index/index-body', array(), true);
+		$this->viewData['_body'] = $this->load->view( $this->APP . '/hosting/index-body', array(), true);
 		$this->render( $this->layout );
 	}
 }
