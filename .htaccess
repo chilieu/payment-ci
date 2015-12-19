@@ -7,8 +7,8 @@ RewriteCond %{REQUEST_URI}  !\.(html|jpg|jpeg|gif|png|css|js)$
 RewriteRule ^(.*[^/])$ http://%{HTTP_HOST}/$1/ [L,R=301]
 
 # force www
-#RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
-#RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # force https
 #RewriteCond %{HTTPS} !=on
