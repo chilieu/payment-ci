@@ -46,8 +46,8 @@
 <!-- Javascript -->
 <?php $this->load->view('front/includes/js', array('themes' => $themes))?>
 
-<script type="text/javascript" src="<?php echo base_url($themes . 'js/plugins.js'); ?>"></script>
-<script src="<?php echo base_url($themes . 'js/forms.js'); ?>"></script>
+<!--script type="text/javascript" src="<?php echo base_url($themes . 'js/plugins.js'); ?>"></script>
+<script src="<?php echo base_url($themes . 'js/forms.js'); ?>"></script-->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript">
             google.maps.event.addDomListener(window, 'load', init);

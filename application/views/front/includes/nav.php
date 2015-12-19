@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <!-- Logo -->
-          <h1 class="logo"> <a href="index.html"><img src="<?php echo base_url($themes . 'img/logo-icon.png'); ?>" alt="">CBH</a> </h1>
+          <h1 class="logo"> <a href="<?=site_url("hosting");?>"><img src="<?php echo base_url($themes . 'img/logo-icon.png'); ?>" alt="">CBH</a> </h1>
           <!-- Main Navigation, Search and Side Navigation Button -->
           <nav>
             <div class="nav-sticky">
@@ -25,17 +25,16 @@
                 <div class="cat-title"></div>
                 <ul class="owl-menu menu-content">
                   <!--=========== Single Menu ===============-->
-                  <li class="single-dropdown"> <a class="active" href="/">Hosting</a></li>
+                  <li class="single-dropdown"> <a class="<?php echo ($this->uri->segment(1) == 'hosting') ? 'active' : ''; ?>" href="<?=site_url("hosting");?>">Hosting</a></li>
 
                   <!--=========== Single Menu ===============-->
-                  <li class="single-dropdown"> <a href="<?=site_url("deal");?>">Deals</a></li>
+                  <li class="single-dropdown"> <a class="<?php echo ($this->uri->segment(1) == 'deal') ? 'active' : ''; ?>" href="<?=site_url("deal");?>">Deals</a></li>
 
                   <!--=========== Contact Menu ===============-->
-                  <li class="single-dropdown"><a href="<?=site_url("support");?>">Support</a>
+                  <li class="single-dropdown"><a class="<?php echo ($this->uri->segment(1) == 'support') ? 'active' : ''; ?>" href="<?=site_url("support");?>">Support</a>
 
                   <!--=========== Contact Menu ===============-->
-                  <li class="single-dropdown"><a href="<?=site_url("contact-us");?>">Contact Us</a>
-
+                  <li class="single-dropdown"><a class="<?php echo ($this->uri->segment(1) == 'contact-us') ? 'active' : ''; ?>" href="<?=site_url("contact-us");?>">Contact Us</a>
 
                 </ul>
               </div>

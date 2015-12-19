@@ -7,6 +7,7 @@
               <li><a href="<?=site_url("/");?>">Home</a></li>
               <li><a href="<?=site_url("hosting");?>">Shared Hosting</a></li>
               <li><a href="<?=site_url("contact-us");?>">Contact</a></li>
+              <li><a href="http://www.cloudberrysoft.com">Development Center</a></li>
             </ul>
           </nav>
           <div class="copyright"> &copy; <?=date("Y");?> CBH-Hosting </div>

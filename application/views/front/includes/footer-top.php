@@ -6,8 +6,8 @@
         </div>
         <div class="col-sm-5">
           <div id="newsletter_signup">
-            <form novalidate="" target="_blank" name="newsletter-subscribe-form" id="newsletter-subscribe-form" method="post" class="form-inline validate">
-              <input type="email" required="" placeholder="Subscribe to our newsletter" class="form-control" name="EMAIL" value="">
+            <form name="subscribe" method="POST" class="form-inline validate" action="<?php echo site_url("submission/index/subscribe/")?>">
+              <input type="email" required placeholder="Subscribe to our newsletter" class="form-control" name="email">
               <input type="submit" id="newsletter-subscribe" name="subscribe" value="SUBSCRIBE">
             </form>
           </div>

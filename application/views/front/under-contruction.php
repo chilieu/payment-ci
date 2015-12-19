@@ -156,7 +156,7 @@
             <div class="row">
                 <!-- Contact Form Starts -->
                 <div data-scroll-reveal="enter left and move 50px over 1.6s" id="contact-area" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <form id="contact-form" class="contact-form" name="contact-form" method="post" action="<?php echo site_url("under-contruction/index/sub/")?>">
+                    <form id="contact-form" class="contact-form" name="contact-form" method="post" action="<?php echo site_url("submission/index/contactUs/")?>">
                     <div class="form-group">
                         <input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
                     </div>

@@ -49,14 +49,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-//$route['default_controller'] = 'under-contruction';
-$route['default_controller'] = 'hosting';
+$route['default_controller'] = 'under-contruction';
+//$route['default_controller'] = 'hosting';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
 // front
 // $route['/'] = 'Home';
+
+// hosting
+$route['hosting'] = 'hosting/index';
+$route['hosting/(:any)'] = 'hosting/$1';
 
 // deal
 $route['deal'] = 'deal/index';
@@ -69,3 +73,7 @@ $route['contact-us/(:any)'] = 'contact-us/$1';
 // support
 $route['support'] = 'support/index';
 $route['support/(:any)'] = 'support/$1';
+
+// submission - all forms submission goes here
+$route['submission'] = 'submission/index';
+$route['submission/(:any)'] = 'submission/$1';

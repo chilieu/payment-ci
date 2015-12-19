@@ -1,5 +1,4 @@
 
-<script type="text/javascript" src="<?php echo base_url($themes . 'js/jquery.js'); ?>"></script>
 <!-- Twitter Bootstrap -->
 <script type="text/javascript" src="<?php echo base_url($themes . 'js/bootstrap.js'); ?>"></script>
 <!-- Jquery UI -->
