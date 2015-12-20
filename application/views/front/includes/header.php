@@ -3,6 +3,8 @@
 <head>
 <title>Cloudberry Shared Hosting</title>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="<?php echo base_url($themes . 'img/favicon.ico'); ?>" type="image/x-icon">
 <link rel="shortcut icon" href="<?php echo base_url($themes . 'img/favicon.ico'); ?>" type="image/x-icon"/>
 <meta name="description" content="CloudBerry Soft is a small group of dedicated Knights working hard around the table and the clock to make awesome app and premium software">

@@ -4,25 +4,34 @@
       <div class="cd-wrap-form">
         <!-- contact form -->
         <h3>Contact Us</h3>
-        <form class="form1">
+        <form id="contact-form" class="form1" name="contact-form" method="post" action="/submission/index/contactUs/">
           <div class="success">
             <div class="success_txt">Contact form submitted!<br />
               <strong> We will be in touch soon.</strong></div>
           </div>
           <fieldset>
           <label class="name col-md-12">
-          <input type="text" value="Name:">
+          <input type="text" placeholder="Name:" name="name">
           <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
           <label class="email col-md-12">
-          <input type="text" value="E-mail:">
+          <input type="text" placeholder="E-mail:" name="email">
           <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
           <label class="message col-md-12">
-          <textarea>Message</textarea>
+          <textarea placeholder="Message" name="msg"></textarea>
           <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
           <div class="clear"></div>
-          <div class="link-form col-md-12"><a class="flat sm purple" href="#" data-type="submit">Sumit comment</a> <a class="flat sm green" href="#" data-type="reset">Clear</a> </div>
+          <div class="link-form col-md-12"><a class="flat sm purple" href="#" data-type="submit" id="btn-submit">Sumit</a> <a class="flat sm green" href="#" data-type="reset">Clear</a> </div>
           </fieldset>
         </form>
       </div>
     </div>
   </div>
+<script type="text/javascript">
+
+$( document ).ready(function() {
+  $("#btn-submit").click(function (){
+      $("#contact-form").submit();
+  });
+});
+
+</script>

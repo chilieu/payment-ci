@@ -9,7 +9,7 @@
                <hr class="colorgraph">
               <!-- contact form -->
               <div id="confirm">
-                <form id="contact-form" class="row form1" name="contact-form" method="post" action="<?php echo site_url("submission/index/contactUs/")?>">
+                <form id="contact-form" class="row form1" name="contact-form" method="post" action="/submission/index/support/">
                   <div class="success">
                     <div class="success_txt">Contact form submitted!<br />
                       <strong> We will be in touch soon.</strong></div>

@@ -79,28 +79,29 @@ class Index extends Front_Controller
 	public function subscribe()
 	{
 		$data = $this->input->post('email');
-		print_r($this->input->post());
-		print_r($data);exit();
 		if( empty($data) ) {
 			echo 	'<script language="javascript" type="text/javascript">
-						alert(\'Empty inputs.'.$data.' ----- \');
+						alert(\'Empty inputs.\');
 						window.location = "/";
     				</script>';exit();
 		}
 
+		$this->load->library('user_agent');
 		$this->load->helper('file');
-		    if ( ! write_file( APPPATH . 'db/files/subscribe.txt', $data, 'a'))
+		$url = empty($_SERVER['HTTP_REFERER']) ? "/" : $_SERVER['HTTP_REFERER'];
+
+		    if ( !write_file( APPPATH . 'db/files/subscribe.txt', $data . "\n", 'a'))
 		    {
 					echo 	'<script language="javascript" type="text/javascript">
 								alert(\'Unable to write the file\');
-								window.location = "/";
+								window.location = "'.$url.'";
 		    				</script>';exit();
 		    }
 		    else
 		    {
 	    			echo 	'<script language="javascript" type="text/javascript">
-								alert(\'Your email has been saved.\');
-								window.location = "/";
+								alert(\'Your email has been saved. '.$url.' \');
+								window.location = "'.$url.'";
     						</script>';exit();
 		    }
 

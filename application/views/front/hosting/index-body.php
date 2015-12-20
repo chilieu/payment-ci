@@ -26,7 +26,7 @@
             <div class="price-col2">
               <div class="title-2">MICRO</div>
               <ul class="peice-list">
-                <li>1GB</li>
+                <li>1GB SSD</li>
                 <li>10GB</li>
                 <li><i class="fa fa-check"></i></li>
                 <li>1</li>
@@ -47,7 +47,7 @@
             <div class="price-col3">
               <div class="title-2">MEDIUM</div>
               <ul class="peice-list">
-                <li>2GB</li>
+                <li>2GB SSD</li>
                 <li>20GB</li>
                 <li><i class="fa fa-check"></i></li>
                 <li>5</li>
@@ -68,7 +68,7 @@
             <div class="price-col2">
               <div class="title-2">ADVANCED</div>
               <ul class="peice-list">
-                <li>3GB</li>
+                <li>3GB SSD</li>
                 <li>30GB</li>
                 <li><i class="fa fa-check"></i></li>
                 <li>Unlimited</li>

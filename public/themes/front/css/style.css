@@ -32,7 +32,7 @@
 /*=========================================================================
 
  01. Main elements
- 
+
 =========================================================================*/
 
 
@@ -98,7 +98,7 @@ h6 { font-size: 14px; line-height: 31px; }
 /*=========================================================================
 
  02. Titles and Text
- 
+
 =========================================================================*/
 
 
@@ -173,7 +173,7 @@ h2.section-title { font-size: 23px; line-height: 31px; }
 /*=========================================================================
 
  03. HOME SLIDER WT TEXT
- 
+
 =========================================================================*/
 
 
@@ -181,7 +181,7 @@ h2.section-title { font-size: 23px; line-height: 31px; }
 #parallax-backstretch { z-index:-1; position:fixed; width:100%; height: 800px; overflow:hidden; }
 
 .boxed #parallax-backstretch { position: absolute !important; }
-    
+
 .boxed #parallax-backstretch .backstretch img { height: auto !important; left: 0 !important; overflow: hidden;  position: absolute !important; top: 0 !important; width: 100% !important; }
 
 #coming-soon { background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7); width:100%; padding: 150px 0 120px; }
@@ -262,7 +262,7 @@ margin-bottom:10px;
 /*=========================================================================
 
  04. HEADER
- 
+
 =========================================================================*/
 
 
@@ -338,11 +338,11 @@ margin-bottom:10px;
 /*=========================================================================
 
  05. Rocket Animated
- 
+
 =========================================================================*/
 
 .rocket-fly { display: inline-block; width: 144px; height: 281px; margin-left: -72px; position: absolute; left: 50%; top: 0; -moz-animation: float 1000ms infinite ease-in-out; -webkit-animation: float 1000ms infinite ease-in-out; animation: float 1000ms infinite ease-in-out }
-@-webkit-keyframes 
+@-webkit-keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
 -moz-transform: translateY(5px) translateX(1px);
@@ -359,7 +359,7 @@ float { 0% {
  transform: translateY(5px) translateX(1px)
 }
 }
-@-moz-keyframes 
+@-moz-keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
  -moz-transform: translateY(5px) translateX(1px);
@@ -376,7 +376,7 @@ float { 0% {
  transform: translateY(5px) translateX(1px)
 }
 }
-@keyframes 
+@keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
  -moz-transform: translateY(5px) translateX(1px);
@@ -397,7 +397,7 @@ float { 0% {
 .rocket-fly .rocket { width: 100%; height: 100%; position: absolute; background: url(../img/illustration/rocket.png) no-repeat; left: 0; top: 0; z-index: 1 }
 
 .fuego { width: 40px; height: 71px; position: absolute; background: url(../img/illustration/fego.png) no-repeat; left: 55px; bottom: -7px; -webkit-animation: fire 100ms infinite ease-in-out; -moz-animation: fire 100ms infinite ease-in-out; animation: fire 100ms infinite ease-in-out }
-@-webkit-keyframes 
+@-webkit-keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -414,7 +414,7 @@ fire { 0% {
  transform: rotate(10deg)
 }
 }
-@-moz-keyframes 
+@-moz-keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -431,7 +431,7 @@ fire { 0% {
  transform: rotate(10deg)
 }
 }
-@keyframes 
+@keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -457,7 +457,7 @@ fire { 0% {
 
 
 .super-man { display: inline-block; height: 139px; position: relative; width: 314px; -moz-animation: float 1000ms infinite ease-in-out; -webkit-animation: float 1000ms infinite ease-in-out; animation: float 1000ms infinite ease-in-out; }
-@-webkit-keyframes 
+@-webkit-keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
  -moz-transform: translateY(5px) translateX(1px);
@@ -474,7 +474,7 @@ float { 0% {
  transform: translateY(5px) translateX(1px)
 }
 }
-@-moz-keyframes 
+@-moz-keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
  -moz-transform: translateY(5px) translateX(1px);
@@ -491,7 +491,7 @@ float { 0% {
  transform: translateY(5px) translateX(1px)
 }
 }
-@keyframes 
+@keyframes
 float { 0% {
  -webkit-transform: translateY(5px) translateX(1px);
  -moz-transform: translateY(5px) translateX(1px);
@@ -512,7 +512,7 @@ float { 0% {
 .super-man .sp-man { background: rgba(0, 0, 0, 0) url("../img/illustration/sp-man.png") no-repeat scroll 0 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 1; }
 
 .fly-waves { background: rgba(0, 0, 0, 0) url("../img/illustration/waving.png") no-repeat scroll 0 0; height: 69px; left: 95px; position: absolute; top: 12px; width: 188px; -webkit-animation: fire 100ms infinite ease-in-out; -moz-animation: fire 100ms infinite ease-in-out; animation: fire 100ms infinite ease-in-out }
-@-webkit-keyframes 
+@-webkit-keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -529,7 +529,7 @@ fire { 0% {
  transform: rotate(10deg)
 }
 }
-@-moz-keyframes 
+@-moz-keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -546,7 +546,7 @@ fire { 0% {
  transform: rotate(10deg)
 }
 }
-@keyframes 
+@keyframes
 fire { 0% {
  -webkit-transform: rotate(10deg);
  -moz-transform: rotate(10deg);
@@ -621,7 +621,7 @@ fire { 0% {
 /*=========================================================================
 
  07. ROW WRAPPERS
- 
+
 =========================================================================*/
 
 
@@ -701,14 +701,14 @@ width: 100%;
 
 .parallax-image6 { background-image:url(../img/illustration/cloud.png) }
 
-.map-overlay { 
+.map-overlay {
 background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* FF3.6+ */
 background: -webkit-gradient(linear, 270deg, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(244, 246, 12, 0)));/* Chrome,Safari4+ */
 background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* Opera 11.10+ */
 background: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* IE10+ */
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0.7)', endColorstr='rgba(244, 246, 12, 0)', GradientType='1'); /* for IE */
-background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* W3C */ 
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(244, 246, 12, 0) 100%);/* W3C */
 display: inline-block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 3; }
 
 .img-overlay {
@@ -764,7 +764,7 @@ background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 32%);/* W3C */ border: 1
 .box-content .deal-icons { width: 100%; }
 }
 
-.deal-t1 { border-bottom: 1px dashed #e3e3e3; color: #343844 ; font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 400; line-height: 30px; margin-bottom: 20px; padding-bottom: 20px; }
+.deal-t1 { border-bottom: 1px dashed #e3e3e3; color: #343844 ; font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 400; line-height: 30px; margin-bottom: 5px; padding-bottom: 5px; }
 
 .deal-p1 { color: #343844 ; font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin-bottom: 4px; }
 
@@ -804,7 +804,7 @@ background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 32%);/* W3C */ border: 1
 /*=========================================================================
 
  10. Image Container
- 
+
 =========================================================================*/
 
 
@@ -1150,7 +1150,7 @@ background: linear-gradient(180deg, #f5ffff 0%, #e6efef 30%);/* W3C */ border-bo
 /*=========================================================================
 
  17. Team
- 
+
 ========================================================================= */
 
 
@@ -1254,7 +1254,7 @@ opacity:.4 }
 /*=========================================================================
 
  19. FAQ's
- 
+
 =========================================================================*/
 
 
@@ -1307,7 +1307,7 @@ background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);/* W3C */ font-siz
 /*=========================================================================
 
  20. Sitemap
- 
+
 ========================================================================= */
 
 
@@ -1365,7 +1365,7 @@ background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);/* W3C */ font-siz
 /*=========================================================================
 
  21. Blog
- 
+
 ========================================================================= */
 
 .post-holder { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #E1E1E1; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); margin-bottom: 60px; position: relative; }
@@ -1508,7 +1508,7 @@ width: 8px;
 /*=========================================================================
 
  22. SIDEBAR
- 
+
 =========================================================================*/
 
 
@@ -1647,7 +1647,7 @@ ul.list-link>li a:hover { color: #D53701; text-decoration: none; }
 /*=========================================================================
 
  23. Popup Contact Form
- 
+
 ========================================================================= */
 
 .cd-nav-trigger { position: fixed; bottom: 50px; right: 50px; width: 44px; height: 44px; background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8); overflow: hidden; text-indent: 100%; white-space: nowrap; z-index: 2; visibility: hidden; -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0); -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s; -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s; transition: transform 0.3s, visibility 0s 0.3s; }
@@ -1694,7 +1694,7 @@ ul.list-link>li a:hover { color: #D53701; text-decoration: none; }
 }
 /* Generated with Bounce.js. Edit at http://goo.gl/PJ93gs */
 
-@-webkit-keyframes 
+@-webkit-keyframes
 anim-jelly { 0% {
  -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
  transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -1820,7 +1820,7 @@ anim-jelly { 0% {
  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 }
-@keyframes 
+@keyframes
 anim-jelly { 0% {
  -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
  transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -1950,7 +1950,7 @@ anim-jelly { 0% {
 /*=========================================================================
 
  24. MAP
- 
+
 ========================================================================= */
 
 .page-title-map #map { position: absolute !important; height: 100%; z-index: 1; }
@@ -2056,7 +2056,7 @@ transition:transform ease-in-out .25s
 /*=========================================================================
 
  25. Contact form
- 
+
 =========================================================================*/
 
 
