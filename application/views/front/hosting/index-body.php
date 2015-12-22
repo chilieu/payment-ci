@@ -21,7 +21,7 @@ $price['adv'] = 15.99;
 
                 <li>24x7 Technical Support</li>
                 <li>Shell Access</li>
-                <li>GIT</li>
+                <li>GIT <small>(Source Control)</small></li>
                 <li>Website Transfer</li>
 
               </ul>
