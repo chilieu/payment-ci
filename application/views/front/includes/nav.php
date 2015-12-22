@@ -25,7 +25,8 @@
                 <div class="cat-title"></div>
                 <ul class="owl-menu menu-content">
                   <!--=========== Single Menu ===============-->
-                  <li class="single-dropdown"> <a class="<?php echo ($this->uri->segment(1) == 'hosting') ? 'active' : ''; ?>" href="<?=site_url("hosting");?>">Hosting</a></li>
+
+                  <!--li class="single-dropdown"> <a class="<?php echo ($this->uri->segment(1) == 'hosting') ? 'active' : ''; ?>" href="<?=site_url("hosting");?>">Hosting</a></li-->
 
                   <!--=========== Single Menu ===============-->
                   <li class="single-dropdown"> <a class="<?php echo ($this->uri->segment(1) == 'deal') ? 'active' : ''; ?>" href="<?=site_url("deal");?>">Deals</a></li>
