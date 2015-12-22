@@ -30,11 +30,13 @@
                   <!--=========== Single Menu ===============-->
                   <li class="single-dropdown"> <a class="<?php echo ($this->uri->segment(1) == 'deal') ? 'active' : ''; ?>" href="<?=site_url("deal");?>">Deals</a></li>
 
-                  <!--=========== Contact Menu ===============-->
-                  <li class="single-dropdown"><a class="<?php echo ($this->uri->segment(1) == 'support') ? 'active' : ''; ?>" href="<?=site_url("support");?>">Support</a>
+                  <!--=========== support Menu ===============-->
+                  <!--li class="single-dropdown"><a class="<?php echo ($this->uri->segment(1) == 'support') ? 'active' : ''; ?>" href="<?=site_url("support");?>">Support</a-->
 
                   <!--=========== Contact Menu ===============-->
                   <li class="single-dropdown"><a class="<?php echo ($this->uri->segment(1) == 'contact-us') ? 'active' : ''; ?>" href="<?=site_url("contact-us");?>">Contact Us</a>
+
+                  <li class="single-dropdown"><a href="//www.cloudberrysoft.com">Dev Center</a>
 
                 </ul>
               </div>

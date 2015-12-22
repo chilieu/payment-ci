@@ -1038,7 +1038,8 @@ width:100%
   width: 100%;
 }
 .promo-btn {
-display: none;
+  width:100%;
+/*display: none;*/
 }
 }
 @media (max-width:768px) {
@@ -1076,7 +1077,8 @@ padding:0
   width: 36%;
 }
 .promo-btn {
-display: none;
+  width:100%;
+/*display: none;*/
 }
 
 .domain-search {

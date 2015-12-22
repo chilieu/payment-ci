@@ -15,10 +15,11 @@ class Index extends Front_Controller
 	public function contactUs()
 	{
 		$data = $this->input->post();
-		if( empty($data) ) {
+		$url = empty($_SERVER['HTTP_REFERER']) ? "/" : $_SERVER['HTTP_REFERER'];
+		if( count($data) ) {
 			echo 	'<script language="javascript" type="text/javascript">
 						alert(\'Empty inputs.\');
-						window.location = "/";
+						window.location = "'.$url.'";
     				</script>';exit();
 		}
 
@@ -33,12 +34,12 @@ class Index extends Front_Controller
 		if ($success == true){
 			echo 	'<script language="javascript" type="text/javascript">
 						alert(\'Thank you for you e-mail. We will contact you shortly.\');
-						window.location = "/";
+						window.location = "'.$url.'";
 					</script>';
 		} else {
 			echo 	'<script language="javascript" type="text/javascript">
 						alert(\'Email cannot send.\');
-						window.location = "/";
+						window.location = "'.$url.'";
     				</script>';
 		}
 		exit();
@@ -47,7 +48,7 @@ class Index extends Front_Controller
 	public function support()
 	{
 		$data = $this->input->post();
-		if( empty($data) ) {
+		if( count($data) ) {
 			echo 	'<script language="javascript" type="text/javascript">
 						alert(\'Empty inputs.\');
 						window.location = "/";
@@ -56,7 +57,7 @@ class Index extends Front_Controller
 
 		// Enter the email where you want to receive the notification when someone submit form
 		$recipient = "chi.lieu@cloudberrysoft.com, quan.luu@cloudberrysoft.com, binlieu777@yahoo.com";
-		$subject = "Contact Form";
+		$subject = "Support Form";
 		$formcontent = print_r($data,true);
 
 		$this->load->helper('email');
@@ -100,7 +101,7 @@ class Index extends Front_Controller
 		    else
 		    {
 	    			echo 	'<script language="javascript" type="text/javascript">
-								alert(\'Your email has been saved. '.$url.' \');
+								alert(\'Your email has been saved.\');
 								window.location = "'.$url.'";
     						</script>';exit();
 		    }

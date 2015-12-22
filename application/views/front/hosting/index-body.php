@@ -1,4 +1,9 @@
+<?php
+$price['mic'] = 5.99;
+$price['med'] = 10.99;
+$price['adv'] = 15.99;
 
+?>
   <div class="second">
     <h2 class="section-title">Shared Hosting</h2>
     <div class="container">
@@ -36,7 +41,7 @@
                 <li><i class="fa fa-times"></i></li>
                 <li><i class="fa fa-times"></i></li>
                 <li><i class="fa fa-times"></i></li>
-                <li class="pack-price"><span>$9.99 <sub>/mo.</sub></span></li>
+                <li class="pack-price"><span>$<?=$price['mic'];?> <sub>/mo.</sub></span></li>
                 <li class="price-table-btn">
                   <p><span><a href="">SIGN UP NOW</a></span></p>
                 </li>
@@ -57,7 +62,7 @@
                 <li><i class="fa fa-times"></i></li>
                 <li><i class="fa fa-times"></i></li>
                 <li><i class="fa fa-times"></i></li>
-                <li class="pack-price"><span>$19.99 <sub>/mo.</sub></span></li>
+                <li class="pack-price"><span>$<?=$price['med'];?> <sub>/mo.</sub></span></li>
                 <li class="price-table-btn">
                   <p><span><a href="">SIGN UP NOW</a></span></p>
                 </li>
@@ -78,7 +83,7 @@
                 <li><i class="fa fa-check"></i></li>
                 <li><i class="fa fa-check"></i></li>
                 <li>Call</li>
-                <li class="pack-price"><span>$29.99 <sub>/mo.</sub></span></li>
+                <li class="pack-price"><span>$<?=$price['adv'];?> <sub>/mo.</sub></span></li>
                 <li class="price-table-btn">
                   <p><span><a href="">SIGN UP NOW</a></span></p>
                 </li>
