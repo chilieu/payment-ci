@@ -5,12 +5,11 @@
           <nav class="secondary-menu">
             <ul class="nav nav-pills">
               <li><a href="<?=site_url("/");?>">Home</a></li>
-              <li><a href="<?=site_url("hosting");?>">Shared Hosting</a></li>
               <li><a href="<?=site_url("contact-us");?>">Contact</a></li>
-              <li><a href="http://www.cloudberrysoft.com">Development Center</a></li>
+              <li><a href="http://www.cloudberry.hosting">Shared Hosting Service</a></li>
             </ul>
           </nav>
-          <div class="copyright"> &copy; <?=date("Y");?> CBH-Hosting </div>
+          <div class="copyright"> &copy; <?=date("Y");?> CBS - Cloudberry Software </div>
         </div>
       </div>
     </div>

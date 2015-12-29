@@ -15,7 +15,7 @@
       <div class="map-circle">
         <div> <div class="logo-drk"><img alt="" src="<?php echo base_url($themes . 'img/logo-icon.png'); ?>">CBH</div>
         <h6>Orange County<br>
-        California </h6>  <address><a href="mailto:contact@cloudberry.hosting" class="skin-color">contact@cloudberry.hosting</a></address> </div> </div>
+        California </h6>  <address><a href="mailto:contact@cloudberrysoft.com" class="skin-color">contact@cloudberrysoft.com</a></address> </div> </div>
    </div>
     <div class="map-overlay"></div>
     <div id="map"></div>

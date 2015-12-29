@@ -5,6 +5,10 @@
             <!-- Form -->
             <div class="col-md-8 col-md-offset-2 text-center">
         <div class="box-style cont-pad">
+<h1>Who We Are</h1>
+<h4>CloudBerry is a small group of dedicated Knights working hard around the table and the clock.</h4>
+
+              <h4>We Use The Latest Technology to make Powerful Web sites and online applications which don't require labour instensive and error prone HTML entry for individual pages.</h4>
               <h2>Drop us a line to talk about your project </h2>
                <hr class="colorgraph">
               <!-- contact form -->
