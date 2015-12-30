@@ -59,7 +59,11 @@ $( document ).ready(function() {
           var r = $.parseJSON(response);
             $(".success_txt").text(r.message);
             $( ".success" ).fadeIn( 1000, function() {
-              $( ".success" ).fadeOut( 1000 );
+              $( ".success" ).fadeOut( 1000, function() {
+                if(r.status == 0) {
+                  $("#contact-form input").val("");
+                }
+              });
             });
         }
       });
