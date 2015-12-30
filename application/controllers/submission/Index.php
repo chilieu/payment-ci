@@ -22,7 +22,7 @@ class Index extends Front_Controller
 		}
 
 		// Enter the email where you want to receive the notification when someone submit form
-		$recipient = "chi.lieu@cloudberrysoft.com, quan.luu@cloudberrysoft.com, binlieu777@yahoo.com";
+		$recipient = "contact@cloudberrysoft.com";
 		$subject = "Contact Form";
 		$formcontent = print_r($data,true);
 
@@ -49,7 +49,7 @@ class Index extends Front_Controller
 		}
 
 		// Enter the email where you want to receive the notification when someone submit form
-		$recipient = "chi.lieu@cloudberrysoft.com, quan.luu@cloudberrysoft.com, binlieu777@yahoo.com";
+		$recipient = "contact@cloudberrysoft.com";
 		$subject = "Support Form";
 		$formcontent = print_r($data,true);
 

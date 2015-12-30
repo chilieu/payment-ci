@@ -19,13 +19,13 @@
                     <div class="success_txt">status</div>
                   </div>
                   <label class="name col-md-4">
-                  <input type="text" placeholder="Name:" name="name">
+                  <input type="text" placeholder="Name:" name="name" required>
                   <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
                   <label class="email col-md-4">
-                  <input type="text" placeholder="E-mail:" name="email">
+                  <input type="text" placeholder="E-mail:" name="email" required>
                   <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
                   <label class="phone col-md-4">
-                  <input type="text" placeholder="Phone:" name="phone">
+                  <input type="text" placeholder="Phone:" name="phone" required>
                   <span class="error">*This is not a valid phone number.</span> <span class="empty">*Please enter Phone</span> </label>
                   <label class="message col-md-12">
                   <textarea name="msg" placeholder="Message"></textarea>
