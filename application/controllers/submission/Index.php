@@ -16,7 +16,7 @@ class Index extends Front_Controller
 	{
 		$data = $this->input->post();
 		$url = empty($_SERVER['HTTP_REFERER']) ? "/" : $_SERVER['HTTP_REFERER'];
-		if( count($data) ) {
+		if( !count($data) ) {
 			$this->ajaxResponse(1, "Empty inputs");
 			exit();
 		}
