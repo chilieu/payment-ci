@@ -14,11 +14,10 @@
               <!-- contact form -->
               <div id="confirm">
                 <form id="contact-form" class="row form1" name="contact-form" method="post" action="/submission/index/contactUs/">
-                  <div class="success">
-                    <div class="success_txt">Contact form submitted!<br />
-                      <strong> We will be in touch soon.</strong></div>
-                  </div>
                   <fieldset>
+                  <div class="success">
+                    <div class="success_txt">status</div>
+                  </div>
                   <label class="name col-md-4">
                   <input type="text" placeholder="Name:" name="name">
                   <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
@@ -32,7 +31,7 @@
                   <textarea name="msg" placeholder="Message"></textarea>
                   <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
                   <div class="clear"></div>
-                  <div class="link-form col-md-12"> <a class="btn style4" href="#" data-type="reset">Clear</a> <a class="btn style1" href="#" data-type="submit" id="btn-submit">Submit</a> </div>
+                  <div class="link-form col-md-12"> <a class="btn style4" data-type="reset">Clear</a> <a class="btn style1" data-type="submit" id="btn-submit">Submit</a> </div>
                   </fieldset>
                 </form>
               </div>
@@ -45,9 +44,29 @@
 <script type="text/javascript">
 
 $( document ).ready(function() {
+//$(".success").show();
   $("#btn-submit").click(function (){
       $("#contact-form").submit();
   });
+
+  $("#contact-form").submit(function(event){
+      event.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: $(this).attr("action"),
+        data: $(this).serialize(),
+        success: function(response) {
+          var r = $.parseJSON(response);
+            $(".success_txt").text(r.message);
+            $( ".success" ).fadeIn( 1000, function() {
+              $( ".success" ).fadeOut( 1000 );
+            });
+        }
+      });
+      return false;
+
+  });
+
 });
 
 </script>

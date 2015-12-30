@@ -2105,7 +2105,7 @@ transition:transform ease-in-out .25s
 
 .form1 textarea { background: none repeat scroll 0 0 #FCFCFC; height:100%; margin:0; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; resize:none; outline: none; border:1px solid #E3E3E3; padding: 21px 18px; overflow:auto; color:#777; font-family:"Roboto",sans-serif; font-size:15px; font-weight: 300; display:block; }
 
-.form1 .success { background: none repeat scroll 0 0 #f6f6f5; border: 1px solid #333333; display: none; height: 166px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; position: absolute; width: 301px; z-index: 1; }
+.form1 .success { background: none repeat scroll 0 0 #f6f6f5; border: 1px solid #333333; display: none; /*height: 166px;*/ box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; position: absolute; width: 100%;padding: 10px; z-index: 1; }
 
 .p27 { margin-right: 10px; }
 

@@ -17,10 +17,8 @@ class Index extends Front_Controller
 		$data = $this->input->post();
 		$url = empty($_SERVER['HTTP_REFERER']) ? "/" : $_SERVER['HTTP_REFERER'];
 		if( count($data) ) {
-			echo 	'<script language="javascript" type="text/javascript">
-						alert(\'Empty inputs.\');
-						window.location = "'.$url.'";
-    				</script>';exit();
+			$this->ajaxResponse(1, "Empty inputs");
+			exit();
 		}
 
 		// Enter the email where you want to receive the notification when someone submit form
@@ -32,17 +30,12 @@ class Index extends Front_Controller
 		$success = send_email($recipient, $subject, $formcontent);
 
 		if ($success == true){
-			echo 	'<script language="javascript" type="text/javascript">
-						alert(\'Thank you for you e-mail. We will contact you shortly.\');
-						window.location = "'.$url.'";
-					</script>';
+			$this->ajaxResponse(0, "Thank you for you e-mail. We will contact you shortly.");
+			exit();
 		} else {
-			echo 	'<script language="javascript" type="text/javascript">
-						alert(\'Email cannot send.\');
-						window.location = "'.$url.'";
-    				</script>';
+			$this->ajaxResponse(1, "Email cannot be sent");
+			exit();
 		}
-		exit();
 	}
 
 	public function support()
@@ -81,30 +74,22 @@ class Index extends Front_Controller
 	{
 		$data = $this->input->post('email');
 		if( empty($data) ) {
-			echo 	'<script language="javascript" type="text/javascript">
-						alert(\'Empty inputs.\');
-						window.location = "/";
-    				</script>';exit();
+			$this->ajaxResponse(1, "Please enter your email");
+			exit();
 		}
 
 		$this->load->library('user_agent');
 		$this->load->helper('file');
 		$url = empty($_SERVER['HTTP_REFERER']) ? "/" : $_SERVER['HTTP_REFERER'];
 
-		    if ( !write_file( APPPATH . 'db/files/subscribe.txt', $data . "\n", 'a'))
-		    {
-					echo 	'<script language="javascript" type="text/javascript">
-								alert(\'Unable to write the file\');
-								window.location = "'.$url.'";
-		    				</script>';exit();
-		    }
-		    else
-		    {
-	    			echo 	'<script language="javascript" type="text/javascript">
-								alert(\'Your email has been saved.\');
-								window.location = "'.$url.'";
-    						</script>';exit();
-		    }
+	    if ( !write_file( APPPATH . 'db/files/subscribe.txt', $data . "\n", 'a'))
+	    {
+			$this->ajaxResponse(1, "System error");exit();
+	    }
+	    else
+	    {
+	    	$this->ajaxResponse(0, "Your email has been saved");exit();
+	    }
 
 	}
 

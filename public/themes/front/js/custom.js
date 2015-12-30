@@ -2,25 +2,27 @@
 
 +function ($) {
   'use strict';
-  
+
 
 /*=========================================================================
      Typing Text
 ========================================================================= */
-  
-  $('.typist').typist({
-      speed: 12
-    }).typistPause(2000) // 2 sec before to write
-    .typistAdd('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur unde quae totam').typistPause(800) // 0,8 sec
-    .typistAdd('\consectetur adipisicing elit.... ').typistPause(1500) // 1,5 sec
-    .typistAdd('You will be ready?');
 
+  $('.typist').typist({
+      speed: 30
+    }).typistPause(1000) // 2 sec before to write
+    .typistAdd("Who We Are?").typistPause(800) // 0,8 sec
+    .typistAdd("\nCloudBerry is a small group of dedicated Knights working hard around the table and the clock.").typistPause(800) // 0,8 sec
+    .typistAdd("\nWe Use The Latest Technology to make Powerful Web sites and online applications").typistPause(200) // 0,8 sec
+    .typistAdd("\nwhich don\'t require labour instensive and error prone HTML entry for individual pages.").typistPause(800); // 0,8 sec
+    //.typistAdd('\consectetur adipisicing elit.... ').typistPause(1500) // 1,5 sec
+    //.typistAdd('You will be ready?');
 
 
 /*=========================================================================
      Parallax
 ========================================================================= */
-  
+
   // parallax
   if ($(".parallax").length > 0 && $(".parallax-elem").length < 1) {
     $.stellar({
@@ -30,11 +32,11 @@
   }
 
 
-						   
+
 /*=========================================================================
      DropDown
 ========================================================================= */
-  
+
   function DropDown(el) {
     this.dd = el;
     this.initEvents();
@@ -53,13 +55,13 @@
     // all dropdowns
     $('.wrapper-dropdown').removeClass('active');
   });
-						   
 
-						   
+
+
 /*=========================================================================
      Flip Card
 ========================================================================= */
-  
+
 /*! flip */
 !function(e){var t=function(e){e.data("fliped",!0);var t="rotate"+e.data("axis");e.find(".flip-front").css({transform:t+(e.data("reverse")?"(-180deg)":"(180deg)")}),e.find(".flip-back").css({transform:t+"(0deg)"})},i=function(e){e.data("fliped",!1);var t="rotate"+e.data("axis");e.find(".flip-front").css({transform:t+"(0deg)"}),e.find(".flip-back").css({transform:t+(e.data("reverse")?"(180deg)":"(-180deg)")})};e.fn.flip=function(a){return this.each(function(){var r=e(this);if(void 0!==a&&"boolean"==typeof a)a?t(r):i(r);else{var s=e.extend({axis:"y",reverse:!1,trigger:"click",speed:500},a);if(r.data("reverse",s.reverse),r.data("axis",s.axis),"x"==s.axis.toLowerCase())var o=2*r.outerHeight(),n="rotatex";else var o=2*r.outerWidth(),n="rotatey";r.find(".flip-back").css({transform:n+"("+(s.reverse?"180deg":"-180deg")+")"}),r.css({perspective:o,position:"relative"});var f=s.speed/1e3||.5;if(r.find(".flip-front, .flip-back").outerHeight(r.height()).outerWidth(r.width()).css({"transform-style":"preserve-3d",position:"absolute",transition:"all "+f+"s ease-out","backface-visibility":"hidden"}),"click"==s.trigger.toLowerCase())r.find('button, a, input[type="submit"]').on(function(e){e.stopPropagation()}),r.on(function(){r.data("fliped")?i(r):t(r)});else if("hover"==s.trigger.toLowerCase()){var d=function(){r.unbind("mouseleave",c),t(r),setTimeout(function(){r.bind("mouseleave",c),r.is(":hover")||i(r)},s.speed+150)},c=function(){i(r)};r.mouseenter(d),r.mouseleave(c)}}}),this}}(jQuery);
   // Flip Card
@@ -74,7 +76,7 @@
 /*=========================================================================
      Side Navigation
 ========================================================================= */
-  
+
 var $lateral_menu_trigger = $(
 		'#owl-menu-trigger'),
 	$content_wrapper = $('.page-wrapper'),
@@ -149,7 +151,7 @@ $('.item-has-children').children('a').on(
 /*=========================================================================
      Owl Search
 ========================================================================= */
-  
+
   //if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
   var MqL = 1170;
   //move nav element position according to window width
@@ -163,7 +165,7 @@ $('.item-has-children').children('a').on(
     toggleSearch();
     closeNav();
   });
-  //close lateral menu on mobile 
+  //close lateral menu on mobile
   $('.owl-search-overlay').on('swiperight', function() {
     if ($('.owl-primary-nav').hasClass('nav-is-visible')) {
       closeNav();
@@ -187,7 +189,7 @@ $('.item-has-children').children('a').on(
 
   function toggleSearch(type) {
     if (type == "close") {
-      //close serach 
+      //close serach
       $('.owl-search').removeClass('is-visible');
       $('.owl-search-trigger').removeClass('search-is-visible');
       $('.owl-search-overlay').removeClass('search-is-visible');
@@ -233,7 +235,7 @@ $('.item-has-children').children('a').on(
 /*=========================================================================
      Map
 ========================================================================= */
-  
+
   $("#map, .map-overlay").click(function(e){
     var e=window.event||e;
     $(".map-center").addClass("off");
@@ -242,22 +244,22 @@ $('.item-has-children').children('a').on(
   $("#map, .map-overlay").mouseout(function(e){
     $(".map-center").removeClass("off");
   });
-  
+
 
 
 
 /*=========================================================================
    Animated DIV
 ========================================================================= */
-  
-function css3animationEffect(){$().waypoint&&Modernizr.mq("only all and (min-width: 320px)")&&$(".animated").waypoint(function(){var i=$(this).data("animation-type");("undefined"==typeof i||0==i)&&(i="fadeIn"),$(this).addClass(i);var t=$(this).data("animation-duration");("undefined"==typeof t||0==t)&&(t="1"),$(this).css("animation-duration",t+"s");var n=$(this).data("animation-delay");"undefined"!=typeof n&&0!=n&&$(this).css("animation-delay",n+"s"),$(this).css("visibility","visible"),setTimeout(function(){$.waypoints("refresh")},1e3)},{triggerOnce:!0,offset:"bottom-in-view"})}css3animationEffect();	
+
+function css3animationEffect(){$().waypoint&&Modernizr.mq("only all and (min-width: 320px)")&&$(".animated").waypoint(function(){var i=$(this).data("animation-type");("undefined"==typeof i||0==i)&&(i="fadeIn"),$(this).addClass(i);var t=$(this).data("animation-duration");("undefined"==typeof t||0==t)&&(t="1"),$(this).css("animation-duration",t+"s");var n=$(this).data("animation-delay");"undefined"!=typeof n&&0!=n&&$(this).css("animation-delay",n+"s"),$(this).css("visibility","visible"),setTimeout(function(){$.waypoints("refresh")},1e3)},{triggerOnce:!0,offset:"bottom-in-view"})}css3animationEffect();
 
 
 
 /*=========================================================================
      jQuery CounTo plugin
 ========================================================================= */
-  
+
 (function(a){a.fn.countTo=function(g){g=g||{};return a(this).each(function(){function e(a){a=b.formatter.call(h,a,b);f.html(a)}var b=a.extend({},a.fn.countTo.defaults,{from:a(this).data("from"),to:a(this).data("to"),speed:a(this).data("speed"),refreshInterval:a(this).data("refresh-interval"),decimals:a(this).data("decimals")},g),j=Math.ceil(b.speed/b.refreshInterval),l=(b.to-b.from)/j,h=this,f=a(this),k=0,c=b.from,d=f.data("countTo")||{};f.data("countTo",d);d.interval&&clearInterval(d.interval);d.interval=
 setInterval(function(){c+=l;k++;e(c);"function"==typeof b.onUpdate&&b.onUpdate.call(h,c);k>=j&&(f.removeData("countTo"),clearInterval(d.interval),c=b.to,"function"==typeof b.onComplete&&b.onComplete.call(h,c))},b.refreshInterval);e(c)})};a.fn.countTo.defaults={from:0,to:0,speed:1E3,refreshInterval:100,decimals:0,formatter:function(a,e){return a.toFixed(e.decimals)},onUpdate:null,onComplete:null}})(jQuery);
 
@@ -281,11 +283,11 @@ $('.counters-box').waypoint(function() {
 	offset: '100%'
 });
 
-						   
+
 /*=========================================================================
      Pice Flip
 ========================================================================= */
-  
+
   jQuery(document).ready(function($) {
 
     //hide the subtle gradient layer (.owl-pricing-list > li::after) when pricing table has been scrolled to the end (mobile version only)
@@ -336,7 +338,7 @@ $('.counters-box').waypoint(function() {
           var selected_filter = $(event.target).val();
           //give higher z-index to the pricing table items selected by the radio input
           show_selected_items(table_elements[selected_filter]);
-          //rotate each owl-pricing-wrapper 
+          //rotate each owl-pricing-wrapper
           //at the end of the animation hide the not-selected pricing tables and rotate back the .owl-pricing-wrapper
           if (!Modernizr.cssanimations) {
             hide_not_selected_items(table_elements, selected_filter);
@@ -373,7 +375,7 @@ $('.counters-box').waypoint(function() {
 /*=========================================================================
      Accordion
 ========================================================================= */
-  
+
   /* -- 1 -- */
   $(function() {
     $(".f-accordion").accordion({
@@ -394,7 +396,7 @@ $('.counters-box').waypoint(function() {
 /*=========================================================================
    animated text
 ========================================================================= */
-  
+
   var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -447,12 +449,12 @@ $('.counters-box').waypoint(function() {
   };
 
 
-						   
-						   
+
+
 /*=========================================================================
      ProgressBars
 ========================================================================= */
-  
+
   (function($, undefined) {
     $.widget("ui.progressbar", {
       version: "1.10.4",
@@ -601,12 +603,12 @@ $('.counters-box').waypoint(function() {
     if ($(window).scrollTop() + $(window).height() == $(document).height()) animateProgressBar();
   });
 
-						   
-						   
+
+
 /*=========================================================================
    Close Message box
 ========================================================================= */
-  
+
   (function($) {
     "use strict";
     $.fn.wTimeline = function() {
@@ -793,21 +795,21 @@ $('.counters-box').waypoint(function() {
     "use strict";
     jQuery('.ser-tab').wTimeline();
   });
-						   
 
 
-						   
+
+
 /*=========================================================================
    Close Message box
 ========================================================================= */
-  
+
   $('.message-box').find('.closemsg').click(function() {
     $(this).parent('.message-box').slideUp(500);
   });
-						   
 
- 
-   
+
+
+
 /*=========================================================================
  Header Login , Select Langusge, Cart etc...
 ========================================================================= */
@@ -943,7 +945,7 @@ $('.counters-box').waypoint(function() {
 /*=========================================================================
      Animated circle loader
 ========================================================================= */
-  
+
   (function(c, e, l, j) {
     var d = function(a, b) {
       arguments.length && this.init(a, b);
@@ -1231,7 +1233,7 @@ $('.counters-box').waypoint(function() {
 /*=========================================================================
        Contact Form Popup bottom of the page
   ========================================================================= */
-  
+
   jQuery(document).ready(function($) {
     // browser window scroll (in pixels) after which the "menu" link is shown
     var offset = 300;
@@ -1277,7 +1279,7 @@ $('.counters-box').waypoint(function() {
       }
     }
   });
-						   
+
 
 
 /* ==============================================
