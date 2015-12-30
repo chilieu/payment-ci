@@ -19,6 +19,7 @@
                     <div class="success_txt">status</div>
                   </div>
                   <label class="name col-md-4">
+                  <input type="text" name="as" class="hide">
                   <input type="text" placeholder="Name:" name="name" required>
                   <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
                   <label class="email col-md-4">
