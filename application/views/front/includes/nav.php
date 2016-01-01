@@ -25,7 +25,7 @@
                 <div class="cat-title"></div>
                 <ul class="owl-menu menu-content">
                   <!--=========== Single Menu ===============-->
-
+<?php /*
                   <li class="single-dropdown"> <a class="<?php echo ($this->uri->segment(1) == '') ? 'active' : ''; ?>" href="<?=site_url("/");?>">Home</a></li>
 
                   <!--=========== Single Menu ===============-->
@@ -40,7 +40,7 @@
                   <!--=========== Contact Menu ===============-->
                   <li class="single-dropdown"><a class="<?php echo ($this->uri->segment(1) == 'contact-us') ? 'active' : ''; ?>" href="<?=site_url("contact-us");?>">Contact Us</a>
 
-
+*/?>
                 </ul>
               </div>
             </div>

@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Index extends Front_Controller
+class Index extends Eadmin_Controller
 {
 	private $layout;
 	public function __construct()
@@ -9,7 +9,8 @@ class Index extends Front_Controller
 	}
 	public function index()
 	{
-		$this->viewData['_body'] = $this->load->view( $this->APP . '/support/index-body', array(), true);
-		$this->render( $this->layout );
+		echo "Welcome to CBS Payment System. Please login to manage your payment";
 	}
+
+
 }

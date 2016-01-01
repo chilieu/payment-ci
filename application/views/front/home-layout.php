@@ -18,10 +18,10 @@
   <footer id="footer" class="style4">
 
 <!-- footer-top -->
-<?php $this->load->view('front/includes/footer-top', array('themes' => $themes))?>
+<?php //$this->load->view('front/includes/footer-top', array('themes' => $themes))?>
 
 <!-- footer-middle -->
-<?php $this->load->view('front/includes/footer-middle', array('themes' => $themes))?>
+<?php //$this->load->view('front/includes/footer-middle', array('themes' => $themes))?>
 
 <!-- footer-bottom -->
 <?php $this->load->view('front/includes/footer-bottom', array('themes' => $themes))?>

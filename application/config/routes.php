@@ -59,6 +59,12 @@ $route['translate_uri_dashes'] = FALSE;
 // front
 // $route['/'] = 'Home';
 
+// customer payment
+$route['(:any)'] = 'e-admin/index/index';
+
+$route['(:num)/(:any)'] = 'e-admin/$2/index';
+$route['(:num)/(:any)/(:any)'] = 'e-admin/$2/$3';
+/*
 // hosting
 $route['sign-up'] = 'sign-up/index';
 $route['sign-up/(:any)'] = 'sign-up/$1';
@@ -82,3 +88,4 @@ $route['support/(:any)'] = 'support/$1';
 // submission - all forms submission goes here
 $route['submission'] = 'submission/index';
 $route['submission/(:any)'] = 'submission/$1';
+*/
