@@ -9,7 +9,9 @@ class Index extends Eadmin_Controller
 	}
 	public function index()
 	{
-		echo "Welcome to CBS Payment System. Please login to manage your payment";
+		$this->layout = 'login-layout';
+		$this->viewData['_body'] = $this->load->view( $this->APP . '/login/index-body', array(), true);
+		$this->render( $this->layout );
 	}
 
 

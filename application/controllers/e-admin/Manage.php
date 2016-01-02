@@ -12,7 +12,6 @@ class Manage extends Eadmin_Controller
 	}
 	public function index()
 	{
-		echo $this->CUSTOMER_ID;
 		$this->viewData['_body'] = $this->load->view( $this->APP . '/login/index-body', array(), true);
 		$this->render( $this->layout );
 	}

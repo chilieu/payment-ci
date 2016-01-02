@@ -60,8 +60,13 @@ $route['translate_uri_dashes'] = FALSE;
 // $route['/'] = 'Home';
 
 // customer payment
-$route['(:any)'] = 'e-admin/index/index';
+//s-admin
+$route['s-admin'] = 's-admin/index';
+$route['s-admin/(:any)'] = 's-admin/$1';
+//$route['s-admin/(:any)/(:any)'] = 's-admin/$2/$3';
 
+//e-admin
+$route['(:any)'] = 'e-admin/index/index';
 $route['(:num)/(:any)'] = 'e-admin/$2/index';
 $route['(:num)/(:any)/(:any)'] = 'e-admin/$2/$3';
 /*
