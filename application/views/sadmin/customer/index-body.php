@@ -55,6 +55,12 @@
 						window.location = '/s-admin/customer/edit/' + $(this).attr('data-id') + '/';
 					}
 				});
+
+				$('.order-page-btn').click(function() {
+					if ($(this).attr('data-id')) {
+						window.location = '/s-admin/customer/order/' + $(this).attr('data-id') + '/';
+					}
+				});
 			}
 		});
 	});

@@ -6,6 +6,7 @@
 </div>
 <?php endif;?>
 <?php $customer = $data['customer'];?>
+<?php $address = $data['address'];?>
 
 <div class="panel-body">
 
@@ -19,7 +20,7 @@
 
         	<div class="panel panel-default">
 	            <div class="panel-heading">
-	                Personal Info
+	                Personal
 	            </div>
 	        	<div class="panel-body">
 
@@ -64,7 +65,7 @@
 
         	<div class="panel panel-default">
 	            <div class="panel-heading">
-	                Company Info
+	                Company
 	            </div>
 	        	<div class="panel-body">
 
@@ -86,6 +87,69 @@
 	            </div>
             </div>
 
+        	<div class="panel panel-default">
+	            <div class="panel-heading">
+	                Address
+	            </div>
+	        	<div class="panel-body">
+
+		    		<div class="row">
+			    		<div class="col-lg-12">
+				            <div class="form-group col-lg-6">
+				                <label>Address 1</label>
+				                <input class="form-control" value="<?=$address['address_1']?>" placeholder="1234 Main St." name="address[address_1]">
+				            </div>
+
+				            <div class="form-group col-lg-6">
+				                <label>Address 2</label>
+				                <input class="form-control" value="<?=$address['address_2']?>" placeholder="SPC #84" name="address[address_2]">
+				            </div>
+		            	</div>
+
+		            </div>
+
+		    		<div class="row">
+			    		<div class="col-lg-12">
+				            <div class="form-group col-lg-3">
+				                <label>City</label>
+				                <input class="form-control" value="<?=$address['city']?>" placeholder="Tustin" name="address[city]">
+				            </div>
+
+				            <div class="form-group col-lg-3">
+				                <label>Zipcode</label>
+				                <input class="form-control" value="<?=$address['zipcode']?>" placeholder="92780" name="address[zipcode]">
+				            </div>
+
+				            <div class="form-group col-lg-3">
+				                <label>State</label>
+				                <?php $states = Util\getStatesArr();?>
+				                <select class="form-control" name="address[state]">
+				                	<?php foreach($states as $t => $s):?>
+				                		<?php if( $address['state'] == $t ):?>
+				                			<option value="<?=$t?>" selected><?=$s?></option>
+				                		<?php else:?>
+				                			<option value="<?=$t?>"><?=$s?></option>
+				                		<?php endif;?>
+				                	<?php endforeach;?>
+				                </select>
+				            </div>
+
+				            <div class="form-group col-lg-3">
+				                <label>Country</label>
+				                <input class="form-control" value="<?=$address['country']?>" placeholder="US" name="address[country]">
+				            </div>
+
+				            <div class="form-group col-lg-12">
+				                <label>Note</label>
+				                <textarea class="form-control" placeholder="Note ..." name="address[note]"><?=nl2br($address['note']);?></textarea>
+				            </div>
+
+		            	</div>
+
+		            </div>
+
+	            </div>
+            </div>
 
 
 		            	<div class="col-lg-12 text-right">

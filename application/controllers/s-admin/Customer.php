@@ -22,7 +22,13 @@ class Customer extends Sadmin_Controller
 		$this->load->model('Customer_model');
 		$customer = $this->Customer_model->getById( $customer_id );
 
+		//get address
+		$this->load->model('Address_model');
+		$address = $this->Address_model->getByCustomerId( $customer_id );
+
+
 		$data['customer'] = $customer[0];
+		$data['address'] = $address[0];
 		$this->viewData['_body'] = $this->load->view( $this->APP . '/customer/add', array('data' => $data), true);
 		$this->render( $this->layout );
 	}
@@ -44,15 +50,23 @@ class Customer extends Sadmin_Controller
 			if ($this->form_validation->run() !== FALSE) {
 
 				$this->load->model('Customer_model');
+				$this->load->model('Address_model');
 				if( isset($customer['customer']['id']) && $customer['customer']['id'] > 0 ) {
 					//print_r($customer['customer']);exit;
 					//update customer
 					$this->Customer_model->update( $customer['customer']['id'], $customer['customer'] );
+					$this->Address_model->update( $customer['customer']['id'], $customer['address'] );
 					$this->session->set_flashdata('addItem', array("status" => 0, "msg" => "Customer has been updated"));
 				} else {
 					//insert customer
-					$this->Customer_model->insert( $customer['customer'] );
-					$this->session->set_flashdata('addItem', array("status" => 0, "msg" => "New customer has been added"));
+					$customer_id = $this->Customer_model->insert( $customer['customer'] );
+					if( $customer_id ) {
+						$customer['address']['customer_id'] = $customer_id;
+						$this->Address_model->insert( $customer['address'] );
+						$this->session->set_flashdata('addItem', array("status" => 0, "msg" => "New customer has been added"));
+					} else {
+						$this->session->set_flashdata('addItem', array("status" => 1, "msg" => "System error, could not insert customer"));
+					}
 				}
 				redirect("/s-admin/customer/");exit;
 			} else {
@@ -65,6 +79,20 @@ class Customer extends Sadmin_Controller
 
 		$this->viewData['_body'] = $this->load->view( $this->APP . '/customer/add', array("data" => $customer), true);
 		$this->render( $this->layout );
+	}
+
+	public function order($customer_id)
+	{
+
+		$this->viewData['_body'] = $this->load->view( $this->APP . '/customer/order', array(), true);
+		$this->render( $this->layout );
+	}
+
+	public function placeOrder($customer_id)
+	{
+		echo $customer_id;
+		$order = $this->input->post();
+
 	}
 
 	public function dashboard()
@@ -109,7 +137,7 @@ class Customer extends Sadmin_Controller
 		$result = array();
 		foreach ($rows as $r) {
 			$actionStr = '<div class="btn btn-default edit-page-btn" data-id="' . $r->id . '" style="margin-right: 8px;"><i class="fa fa-pencil"></i></div>';
-			$actionStr .= '<div class="btn btn-default delete-page-btn" data-id="' . $r->id . '"><i class="fa fa-eye"></i></div>';
+			$actionStr .= '<div class="btn btn-default order-page-btn" data-id="' . $r->id . '"><i class="fa fa-shopping-cart"></i></div>';
 
 			$result[] = array(
 				$r->id,

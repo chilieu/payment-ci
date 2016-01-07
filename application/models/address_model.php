@@ -1,19 +1,26 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Customer_model extends CI_Model {
+class Address_model extends CI_Model {
 
 	var $table;
 
     function __construct()
     {
         parent::__construct();
-        $this->table = "customer";
+        $this->table = "address";
     }
 
     public function getById($id)
     {
         return $this->db->get_where($this->table, array(
             'id' => $id
+        ))->result_array();
+    }
+
+    public function getByCustomerId($id)
+    {
+        return $this->db->get_where($this->table, array(
+            'customer_id' => $id
         ))->result_array();
     }
 
@@ -49,16 +56,12 @@ class Customer_model extends CI_Model {
 
     public function insert($data)
     {
-    	$re = $this->db->insert($this->table, $data);
-        if($re)
-            return $this->db->insert_id();
-        else
-            return false;
+    	return $this->db->insert($this->table, $data);
     }
 
     public function update($id, $data)
     {
-        $this->db->where('id', $id);
+        $this->db->where('customer_id', $id);
         return $this->db->update($this->table, $data);
     }
 
