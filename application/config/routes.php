@@ -61,7 +61,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 // customer payment
 //s-admin
-$route['s-admin'] = 's-admin/index';
+$route['s-admin'] = 's-admin/index/index';
 $route['s-admin/(:any)'] = 's-admin/$1';
 //$route['s-admin/(:any)/(:any)'] = 's-admin/$2/$3';
 

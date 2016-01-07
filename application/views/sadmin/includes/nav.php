@@ -228,9 +228,16 @@
                     <ul class="nav" id="side-menu">
 
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="<?=site_url('s-admin/manage');?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
 
+                        <li>
+                            <a href="<?=site_url('s-admin/customer');?>"><i class="fa fa-user fa-fw"></i> Customers</a>
+                        </li>
+
+                        <li>
+                            <a href="<?=site_url('s-admin/product');?>"><i class="fa fa-soundcloud fa-fw"></i> Products</a>
+                        </li>
 
                     </ul>
                 </div>

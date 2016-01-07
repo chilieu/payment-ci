@@ -2,13 +2,10 @@
 class Manage extends Sadmin_Controller
 {
 	private $layout;
-	private $CUSTOMER_ID;
 	public function __construct()
 	{
 		parent::__construct();
 		$this->layout = 'layout';
-		$this->CUSTOMER_ID = $this->uri->segment(1, 0);
-		//if( !$this->CUSTOMER_ID ) header("Location: http://www.cloudberry.com/");
 	}
 	public function index()
 	{
